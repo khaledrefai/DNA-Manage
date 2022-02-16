@@ -1,0 +1,90 @@
+entity InhouseSample{
+	sampleId Long,
+    empGrpNo Long,
+    fullNameAr String,
+    fullNameEn String,
+    natAr String,
+    natEn String,
+    uid String,
+    emiratesId String,
+    exhibit String,
+    gender String,
+    dateOfBirth LocalDate,
+	batchDate LocalDate,
+	collectionDate LocalDate,
+    sampleNotes String,
+	addBy Long,
+    addDate LocalDate,
+    updateBy Long,
+    updateDate LocalDate,
+    attachment Blob
+}
+entity DnaProfileType{
+	name String,
+    description String
+}
+
+entity ProjectType{
+	name String,
+     description String
+}
+ 
+entity SampleType{
+	name String,
+     description String
+	}
+entity WorkPlace{
+	name String,
+     description String
+	}
+
+ 
+entity SampleStatus{
+name String,
+     description String
+}
+entity CaseSample{
+	sampleId Long,
+    fullNameAr String,
+    fullNameEn String,
+    natAr String,
+    natEn String,
+    uid String,
+    emiratesId String,
+    exhibit String,
+    gender String,
+    dateOfBirth LocalDate,
+	dueDate LocalDate,
+	recievedDate LocalDate,
+    sampleNotes String,
+	addBy Long,
+    addDate LocalDate,
+    updateBy Long,
+    updateDate LocalDate,
+    attachment Blob,
+    caseNumber String,
+    barcodeNumber String,
+    caseType String,
+    policeStation String,
+    reportNumber String,
+    testEndDate LocalDate,
+    caseNote String,
+    
+}
+entity CaseSampleType {
+	name String,
+     description String
+	}
+relationship ManyToOne {
+  InhouseSample{dnaProfileType} to DnaProfileType,
+  InhouseSample{projectType} to ProjectType,
+    InhouseSample{sampleType} to SampleType,
+      InhouseSample{workPlace} to WorkPlace,
+       InhouseSample{sampleStatus} to SampleStatus,
+       
+     CaseSample{caseSampleType} to CaseSampleType,
+        CaseSample{sampleStatus} to SampleStatus,
+}
+// Set pagination options
+paginate InhouseSamples, CaseWorkSamples with pagination
+
