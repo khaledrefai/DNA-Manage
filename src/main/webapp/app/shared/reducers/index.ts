@@ -12,6 +12,12 @@ import password from 'app/modules/account/password/password.reducer';
 import settings from 'app/modules/account/settings/settings.reducer';
 import passwordReset from 'app/modules/account/password-reset/password-reset.reducer';
 import sessions from 'app/modules/account/sessions/sessions.reducer';
+// prettier-ignore
+import memberData from 'app/entities/member-data/member-data.reducer';
+// prettier-ignore
+import inbodyData from 'app/entities/inbody-data/inbody-data.reducer';
+// prettier-ignore
+import inBodyResultsSheet from 'app/entities/in-body-results-sheet/in-body-results-sheet.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 const rootReducer = {
@@ -26,6 +32,9 @@ const rootReducer = {
   password,
   settings,
   sessions,
+  memberData,
+  inbodyData,
+  inBodyResultsSheet,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar,
 };

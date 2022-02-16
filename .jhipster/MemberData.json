@@ -1,0 +1,48 @@
+{
+  "applications": "*",
+  "changelogDate": "20220216135531",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "member_data",
+  "fields": [
+    {
+      "fieldName": "testDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "userId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "userName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "userGender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "userBirthday",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "userAge",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "userHeight",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "orderDate",
+      "fieldType": "Instant"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "MemberData",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

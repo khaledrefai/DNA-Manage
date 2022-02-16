@@ -1,0 +1,35 @@
+
+entity MemberData {
+	testDate Instant
+	 userId Integer
+     userName String
+     userGender String
+     userBirthday String
+     userAge Integer
+     userHeight Float
+     orderDate Instant
+     
+ }
+
+entity InbodyData {
+	userID Integer
+    columnName String
+    ColumnValue String
+    
+}
+
+entity  InBodyResultsSheet {
+	userId Integer
+    datetimes Instant
+    orderDate Instant
+    InbodyImage String
+}
+
+ 
+// Set pagination options
+paginate InBodyResultsSheet with pagination
+paginate InbodyData with pagination
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+
