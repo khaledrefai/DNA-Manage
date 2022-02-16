@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20220216140735",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "dna_profile_type",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "DnaProfileType",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

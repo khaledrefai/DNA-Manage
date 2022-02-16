@@ -1,0 +1,130 @@
+{
+  "applications": "*",
+  "changelogDate": "20220216140740",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "case_sample",
+  "fields": [
+    {
+      "fieldName": "sampleId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "fullNameAr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fullNameEn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "natAr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "natEn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "uid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emiratesId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "exhibit",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateOfBirth",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dueDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "recievedDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "sampleNotes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addBy",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "addDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updateBy",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "attachment",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "caseNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "barcodeNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "caseType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "policeStation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reportNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "testEndDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "caseNote",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "CaseSample",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "caseSampleType",
+      "otherEntityRelationshipName": "caseSample",
+      "relationshipName": "caseSampleType",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "sampleStatus",
+      "otherEntityRelationshipName": "caseSample",
+      "relationshipName": "sampleStatus",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

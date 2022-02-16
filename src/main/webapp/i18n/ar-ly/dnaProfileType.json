@@ -1,0 +1,25 @@
+{
+  "dnaManagementApplicationApp": {
+    "dnaProfileType": {
+      "home": {
+        "title": "Dna Profile Types",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Dna Profile Type",
+        "createOrEditLabel": "Create or edit a Dna Profile Type",
+        "notFound": "No Dna Profile Types found"
+      },
+      "created": "A new Dna Profile Type is created with identifier {{ param }}",
+      "updated": "A Dna Profile Type is updated with identifier {{ param }}",
+      "deleted": "A Dna Profile Type is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Dna Profile Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Dna Profile Type"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20220216140741",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "case_sample_type",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "CaseSampleType",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

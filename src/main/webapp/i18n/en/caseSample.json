@@ -1,0 +1,50 @@
+{
+  "dnaManagementApplicationApp": {
+    "caseSample": {
+      "home": {
+        "title": "Case Samples",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Case Sample",
+        "createOrEditLabel": "Create or edit a Case Sample",
+        "notFound": "No Case Samples found"
+      },
+      "created": "A new Case Sample is created with identifier {{ param }}",
+      "updated": "A Case Sample is updated with identifier {{ param }}",
+      "deleted": "A Case Sample is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Case Sample {{ id }}?"
+      },
+      "detail": {
+        "title": "Case Sample"
+      },
+      "id": "ID",
+      "sampleId": "Sample Id",
+      "fullNameAr": "Full Name Ar",
+      "fullNameEn": "Full Name En",
+      "natAr": "Nat Ar",
+      "natEn": "Nat En",
+      "uid": "Uid",
+      "emiratesId": "Emirates Id",
+      "exhibit": "Exhibit",
+      "gender": "Gender",
+      "dateOfBirth": "Date Of Birth",
+      "dueDate": "Due Date",
+      "recievedDate": "Recieved Date",
+      "sampleNotes": "Sample Notes",
+      "addBy": "Add By",
+      "addDate": "Add Date",
+      "updateBy": "Update By",
+      "updateDate": "Update Date",
+      "attachment": "Attachment",
+      "caseNumber": "Case Number",
+      "barcodeNumber": "Barcode Number",
+      "caseType": "Case Type",
+      "policeStation": "Police Station",
+      "reportNumber": "Report Number",
+      "testEndDate": "Test End Date",
+      "caseNote": "Case Note",
+      "caseSampleType": "Case Sample Type",
+      "sampleStatus": "Sample Status"
+    }
+  }
+}

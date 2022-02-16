@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20220216140739",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "sample_status",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "SampleStatus",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

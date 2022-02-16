@@ -1,0 +1,47 @@
+{
+  "dnaManagementApplicationApp": {
+    "inhouseSample": {
+      "home": {
+        "title": "Inhouse Samples",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Inhouse Sample",
+        "createOrEditLabel": "Create or edit a Inhouse Sample",
+        "notFound": "No Inhouse Samples found"
+      },
+      "created": "A new Inhouse Sample is created with identifier {{ param }}",
+      "updated": "A Inhouse Sample is updated with identifier {{ param }}",
+      "deleted": "A Inhouse Sample is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Inhouse Sample {{ id }}?"
+      },
+      "detail": {
+        "title": "Inhouse Sample"
+      },
+      "id": "ID",
+      "sampleId": "Sample Id",
+      "empGrpNo": "Emp Grp No",
+      "fullNameAr": "Full Name Ar",
+      "fullNameEn": "Full Name En",
+      "natAr": "Nat Ar",
+      "natEn": "Nat En",
+      "uid": "Uid",
+      "emiratesId": "Emirates Id",
+      "exhibit": "Exhibit",
+      "gender": "Gender",
+      "dateOfBirth": "Date Of Birth",
+      "batchDate": "Batch Date",
+      "collectionDate": "Collection Date",
+      "sampleNotes": "Sample Notes",
+      "addBy": "Add By",
+      "addDate": "Add Date",
+      "updateBy": "Update By",
+      "updateDate": "Update Date",
+      "attachment": "Attachment",
+      "dnaProfileType": "Dna Profile Type",
+      "projectType": "Project Type",
+      "sampleType": "Sample Type",
+      "workPlace": "Work Place",
+      "sampleStatus": "Sample Status"
+    }
+  }
+}
