@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20220216140736",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "project_type",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ProjectType",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

@@ -1,0 +1,124 @@
+{
+  "applications": "*",
+  "changelogDate": "20220216140734",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "inhouse_sample",
+  "fields": [
+    {
+      "fieldName": "sampleId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "empGrpNo",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "fullNameAr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fullNameEn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "natAr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "natEn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "uid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emiratesId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "exhibit",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateOfBirth",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "batchDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "collectionDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "sampleNotes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addBy",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "addDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updateBy",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "attachment",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "InhouseSample",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "dnaProfileType",
+      "otherEntityRelationshipName": "inhouseSample",
+      "relationshipName": "dnaProfileType",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "projectType",
+      "otherEntityRelationshipName": "inhouseSample",
+      "relationshipName": "projectType",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "sampleType",
+      "otherEntityRelationshipName": "inhouseSample",
+      "relationshipName": "sampleType",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "workPlace",
+      "otherEntityRelationshipName": "inhouseSample",
+      "relationshipName": "workPlace",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "sampleStatus",
+      "otherEntityRelationshipName": "inhouseSample",
+      "relationshipName": "sampleStatus",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

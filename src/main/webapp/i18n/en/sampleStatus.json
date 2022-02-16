@@ -1,0 +1,25 @@
+{
+  "dnaManagementApplicationApp": {
+    "sampleStatus": {
+      "home": {
+        "title": "Sample Statuses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Sample Status",
+        "createOrEditLabel": "Create or edit a Sample Status",
+        "notFound": "No Sample Statuses found"
+      },
+      "created": "A new Sample Status is created with identifier {{ param }}",
+      "updated": "A Sample Status is updated with identifier {{ param }}",
+      "deleted": "A Sample Status is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Sample Status {{ id }}?"
+      },
+      "detail": {
+        "title": "Sample Status"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description"
+    }
+  }
+}

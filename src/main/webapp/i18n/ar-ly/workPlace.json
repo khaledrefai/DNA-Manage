@@ -1,0 +1,25 @@
+{
+  "dnaManagementApplicationApp": {
+    "workPlace": {
+      "home": {
+        "title": "Work Places",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Work Place",
+        "createOrEditLabel": "Create or edit a Work Place",
+        "notFound": "No Work Places found"
+      },
+      "created": "A new Work Place is created with identifier {{ param }}",
+      "updated": "A Work Place is updated with identifier {{ param }}",
+      "deleted": "A Work Place is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Work Place {{ id }}?"
+      },
+      "detail": {
+        "title": "Work Place"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description"
+    }
+  }
+}

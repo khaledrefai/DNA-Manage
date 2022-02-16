@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity InhouseSample.
+    -->
+    <changeSet id="20220216140734-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="dna_profile_type_id"
+                                 baseTableName="inhouse_sample"
+                                 constraintName="fk_inhouse_sam__dna_prof_34_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dna_profile_type"/>
+
+        <addForeignKeyConstraint baseColumnNames="project_type_id"
+                                 baseTableName="inhouse_sample"
+                                 constraintName="fk_inhouse_sam__project__0c_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="project_type"/>
+
+        <addForeignKeyConstraint baseColumnNames="sample_type_id"
+                                 baseTableName="inhouse_sample"
+                                 constraintName="fk_inhouse_sam__sample_t_37_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sample_type"/>
+
+        <addForeignKeyConstraint baseColumnNames="work_place_id"
+                                 baseTableName="inhouse_sample"
+                                 constraintName="fk_inhouse_sam__work_pla_32_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="work_place"/>
+
+        <addForeignKeyConstraint baseColumnNames="sample_status_id"
+                                 baseTableName="inhouse_sample"
+                                 constraintName="fk_inhouse_sam__sample_s_76_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sample_status"/>
+    </changeSet>
+</databaseChangeLog>

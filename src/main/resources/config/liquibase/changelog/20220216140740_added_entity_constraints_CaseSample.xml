@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity CaseSample.
+    -->
+    <changeSet id="20220216140740-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="case_sample_type_id"
+                                 baseTableName="case_sample"
+                                 constraintName="fk_case_sample__case_sam_03_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="case_sample_type"/>
+
+        <addForeignKeyConstraint baseColumnNames="sample_status_id"
+                                 baseTableName="case_sample"
+                                 constraintName="fk_case_sample__sample_s_67_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sample_status"/>
+    </changeSet>
+</databaseChangeLog>
