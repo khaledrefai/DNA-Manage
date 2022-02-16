@@ -1,0 +1,27 @@
+{
+  "dnaManagementApplicationApp": {
+    "inBodyResultsSheet": {
+      "home": {
+        "title": "In Body Results Sheets",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new In Body Results Sheet",
+        "createOrEditLabel": "Create or edit a In Body Results Sheet",
+        "notFound": "No In Body Results Sheets found"
+      },
+      "created": "A new In Body Results Sheet is created with identifier {{ param }}",
+      "updated": "A In Body Results Sheet is updated with identifier {{ param }}",
+      "deleted": "A In Body Results Sheet is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete In Body Results Sheet {{ id }}?"
+      },
+      "detail": {
+        "title": "In Body Results Sheet"
+      },
+      "id": "ID",
+      "userId": "User Id",
+      "datetimes": "Datetimes",
+      "orderDate": "Order Date",
+      "inbodyImage": "Inbody Image"
+    }
+  }
+}

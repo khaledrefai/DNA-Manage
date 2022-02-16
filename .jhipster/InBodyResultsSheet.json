@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20220216135533",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "in_body_results_sheet",
+  "fields": [
+    {
+      "fieldName": "userId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "datetimes",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "orderDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "inbodyImage",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "InBodyResultsSheet",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

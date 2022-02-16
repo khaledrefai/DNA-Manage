@@ -1,0 +1,26 @@
+{
+  "dnaManagementApplicationApp": {
+    "inbodyData": {
+      "home": {
+        "title": "Inbody Data",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Inbody Data",
+        "createOrEditLabel": "Create or edit a Inbody Data",
+        "notFound": "No Inbody Data found"
+      },
+      "created": "A new Inbody Data is created with identifier {{ param }}",
+      "updated": "A Inbody Data is updated with identifier {{ param }}",
+      "deleted": "A Inbody Data is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Inbody Data {{ id }}?"
+      },
+      "detail": {
+        "title": "Inbody Data"
+      },
+      "id": "ID",
+      "userID": "User ID",
+      "columnName": "Column Name",
+      "columnValue": "Column Value"
+    }
+  }
+}
