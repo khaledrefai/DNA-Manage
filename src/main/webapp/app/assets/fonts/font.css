@@ -1,0 +1,218 @@
+@font-face {
+    font-family: bukrabold;
+    src: url(Bukra/TTF/29ltbukrabold.ttf), url(Bukra/EOT/29ltbukrabold.eot);
+}
+
+@font-face {
+    font-family: bukrabolditalic;
+    src: url(Bukra/TTF/29ltbukrabolditalic.ttf);
+}
+
+@font-face {
+    font-family: bukralight;
+    src: url(Bukra/TTF/29ltbukralight.ttf), url(Bukra/EOT/29ltbukralight.eot);
+}
+
+@font-face {
+    font-family: bukraregular;
+    src: url(Bukra/TTF/29ltbukraregular.ttf), url(Bukra/EOT/29ltbukraregular.eot);
+}
+
+@font-face {
+    font-family: DubaiLight;
+    src: url(Dubai/DubaiLight.eot) format("embedded-opentype"), url(Dubai/DubaiLight.woff) format("woff"), url(Dubai/DubaiLight.ttf) format("truetype"), url(Dubai/DubaiLight.svg) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: DubaiRegular;
+    src: url(Dubai/DubaiRegular.eot) format("embedded-opentype"), url(Dubai/DubaiRegular.woff) format("woff"), url(Dubai/DubaiRegular.ttf) format("truetype"), url(Dubai/DubaiRegular.svg) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: DubaiMedium;
+    src: url(Dubai/DubaiMedium.eot) format("embedded-opentype"), url(Dubai/DubaiMedium.woff) format("woff"), url(Dubai/DubaiMedium.ttf) format("truetype"), url(Dubai/DubaiMedium.svg) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: DubaiBold;
+    src: url(Dubai/DubaiLight.eot) format("embedded-opentype"), url(Dubai/DubaiBold.woff) format("woff"), url(Dubai/DubaiLight.ttf) format("truetype"), url(Dubai/DubaiBold.svg) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(materialicon/MaterialIcons-Regular.eot);
+    src: local("Material Icons"), local("MaterialIcons-Regular"), url(materialicon/MaterialIcons-Regular.woff2) format("woff2"), url(materialicon/MaterialIcons-Regular.woff) format("woff"), url(materialicon/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-feature-settings: 'liga';
+    font-feature-settings: 'liga';
+    /* Rules for sizing the icon. */
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-20 {
+    font-size: 20px;
+}
+
+.material-icons.md-22 {
+    font-size: 22px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-26 {
+    font-size: 26px;
+}
+
+.material-icons.md-28 {
+    font-size: 28px;
+}
+
+.material-icons.md-30 {
+    font-size: 30px;
+}
+
+.material-icons.md-32 {
+    font-size: 32px;
+}
+
+.material-icons.md-34 {
+    font-size: 34px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-38 {
+    font-size: 38px;
+}
+
+.material-icons.md-40 {
+    font-size: 40px;
+}
+
+.material-icons.md-44 {
+    font-size: 44px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.font-dubai-light {
+    font-family: DubaiLight, sans-serif;
+}
+
+.font-dubai-bold {
+    font-family: DubaiBold, sans-serif;
+}
+
+.font-dubai-medium {
+    font-family: DubaiMedium, sans-serif;
+}
+
+.font-dubai-regular {
+    font-family: DubaiRegular, sans-serif;
+}
+
+.f-dubai {
+    font-family: DubaiRegular, sans-serif;
+}
+
+.font-bukra-bold {
+    font-family: bukrabold, DubaiBold, sans-serif;
+}
+
+.font-bukra-bold-italc {
+    font-family: bukrabolditalic, sans-serif;
+}
+
+.font-bukra-regular {
+    font-family: bukraregular, sans-serif;
+}
+
+.font-bukra-light {
+    font-family: bukralight, sans-serif;
+}
+
+.f-bukra {
+    font-family: bukraregular, DubaiRegular, sans-serif;
+}
+
+.f-bukra-bold {
+    font-family: bukrabold, DubaiBold, sans-serif;
+}
+
+.f-bukra-bold-italc {
+    font-family: bukrabolditalic, DubaiMedium, sans-serif;
+}
+
+.f-size-9 {
+    font-size: 9px;
+}
+
+.f-size-10 {
+    font-size: 10px;
+}
+
+.f-size-12 {
+    font-size: 12px;
+}
+
+.f-size-14 {
+    font-size: 14px;
+}
+
+.f-size-15 {
+    font-size: 15px;
+}
+
+.f-size-17 {
+    font-size: 17px;
+}
+
+.f-size-40 {
+    font-size: 40px;
+}
+
+.text-dark-87 {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.l-height-17 {
+    line-height: 17px;
+}
+
+
+/*# sourceMappingURL=font.css.map */

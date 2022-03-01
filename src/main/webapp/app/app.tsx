@@ -50,16 +50,175 @@ export const App = () => {
             isOpenAPIEnabled={isOpenAPIEnabled}
           />
         </ErrorBoundary>
-        <div className="container-fluid view-container" id="app-view-container">
-          <Card className="jh-card">
-            <ErrorBoundary>
-              <AppRoutes />
-            </ErrorBoundary>
-          </Card>
-          <Footer />
-        </div>
-      </div>
-    </Router>
+        <div id="app-view-container" className="main sticky sticky-cont-scroll">
+          <div className="inner-container services">
+            <div className="sticky-cont" id="sticky-cont">
+              <div className="wrapper">
+                {/* <div id="sidebar-right" className="sidebar-right sidebar-sm"> */}
+                <div id="sidebar-right" className="sidebar-right">
+                  <div className="main-logo d-flex">
+                    <a href="javascript:(void);">
+                      <img src="content/images/app-logo.png" loading="eager" />
+                      <span>اﻻﻓﺘﺮاﺿﻴﺔ</span>
+                    </a>
+                  </div>
+
+                  <div className="scroll-inside">
+                    <div id="accordian" className="accordian">
+                      <ul>
+                        <li className='active'>
+                          <h3>
+                            <a href="javascript:(void);" data-tooltip="اﻻﻓﺘﺮاﺿﻴﺔ اﻻﻓﺘﺮاﺿﻴﺔاﻻﻓﺘﺮاﺿﻴﺔ اﻻﻓﺘﺮاﺿﻴﺔ اﻻﻓﺘﺮاﺿﻴﺔ اﻻﻓﺘﺮاﺿﻴﺔ">
+                              <i className="icon ico-dp-production-card mt-n2"></i>
+                              <label>اﻻﻓﺘﺮاﺿﻴﺔ اﻻﻓﺘﺮاﺿﻴﺔ</label>
+                              <i className="fa fa-chevron-down left_icon"></i>
+                              <span>10</span>
+                            </a>
+                          </h3>
+                          <ul className="parent d-block">
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label> اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔاﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ</label></a></li>
+                            <li className='active'><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻻﻓﺘﺮاﺿﻴﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻻﻓﺘﺮاﺿﻴﺔ</label></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h3>
+                            <a href="javascript:(void);" data-tooltip="اﻻﻓﺘﺮاﺿﻴﺔ اﻻﻓﺘﺮاﺿﻴﺔاﻻﻓﺘﺮاﺿﻴﺔ اﻻﻓﺘﺮاﺿﻴﺔ اﻻﻓﺘﺮاﺿﻴﺔ اﻻﻓﺘﺮاﺿﻴﺔ">
+                              <i className="icon ico-dp-production-card mt-n2"></i>
+                              <label>اﻻﻓﺘﺮاﺿﻴﺔ اﻻﻓﺘﺮاﺿﻴﺔ</label>
+                              <i className="fa fa-chevron-down left_icon"></i>
+                              <span>10</span>
+                            </a>
+                          </h3>
+                          <ul>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label> اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔاﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻻﻓﺘﺮاﺿﻴﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻻﻓﺘﺮاﺿﻴﺔ</label></a></li>
+                          </ul>
+                        </li>
+                        {/* <li>
+                          <h3>
+                            <a href="javascript:(void);" data-tooltip="اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ">
+                              <i className="icon ico-dp-production-card"></i>
+                              <label>اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ</label>
+                              <i className="fa fa-chevron-down left_icon"></i>
+                            </a>
+                          </h3>
+                          <ul className="parent">
+                            <li>
+                              <a href="javascript:(void);">
+                                <i className="icon ico-dp-production-card"></i>
+                                <label>اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ</label>
+                                <i className="fa fa-chevron-down left_icon"></i>
+                              </a>
+                              <ul className="child">
+                                <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻻﻓﺘﺮاﺿﻴﺔ</label></a></li>
+                                <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻻﻓﺘﺮاﺿﻴﺔ</label></a></li>
+                                <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ</label></a></li>
+                              </ul>
+                            </li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻻﻓﺘﺮاﺿﻴﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ</label></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h3>
+                            <a href="javascript:(void);" data-tooltip="Favourites">
+                              <i className="icon ico-upload-cloud"></i>
+                              <label>Favourites</label>
+                              <i className="fa fa-chevron-down left_icon"></i>
+                              <span>10</span>
+                            </a>
+                          </h3>
+                          <ul className="parent">
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻻﻓﺘﺮاﺿﻴﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻻﻓﺘﺮاﺿﻴﺔ</label></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h3><a href="javascript:(void);"><i className="fa fa-lg fa-heart"></i><label>Favourites</label><i className="fa fa-chevron-down left_icon"></i><span>10</span></a></h3>
+                          <ul className="parent">
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻻﻓﺘﺮاﺿﻴﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻻﻓﺘﺮاﺿﻴﺔ</label></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h3><a href="javascript:(void);"><i className="fa fa-lg fa-heart"></i><label>Favourites</label><i className="fa fa-chevron-down left_icon"></i><span>10</span></a></h3>
+                          <ul className="parent">
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻻﻓﺘﺮاﺿﻴﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻟﻤﻬﺎﻡ اﻟﻨﺸﻄﺔ</label></a></li>
+                            <li><a href="javascript:(void);"><i className="fa fa-square icon"></i><label>اﻻﻓﺘﺮاﺿﻴﺔ</label></a></li>
+                          </ul>
+                        </li> */}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="footer-settings">
+                    <a href="javascript:(void);">
+                      <i className="fas fa-cog"></i>
+                      <label>اﻻﻓﺘﺮاﺿﻴﺔ</label>
+                    </a>
+                  </div>
+                </div>
+                {/* right-side-bar */}
+                <div id="content" className="content-main">
+                  
+                  <div className="content-header position-relative">
+                    <div className="float-right">
+                      <button type="button" id="sidebarCollapse" className="collapse-right-btn">
+                        <i className="ico-right-open-3 keyboard_arrow_right nav-close d-none"></i>
+                        <i className="ico-menu-1 keyboard_dehaze nav-open"></i>
+                      </button>
+                    </div>
+                    <nav aria-label="breadcrumb">
+                      <ol className="breadcrumb mr-3">
+                        <li className="breadcrumb-item">اﻟﺮﺋﻴﺴﻴﺔ</li>
+                        <li className="breadcrumb-item">اﻟﻌﻨﺎﻭﻳﻦ اﻻﻓﺘﺮاﺿﻴﺔ</li>
+                        <li className="breadcrumb-item active">اﻟﻌﻨﺎﻭﻳﻦ اﻻﻓﺘﺮاﺿﻴﺔ</li>
+                      </ol>
+                    </nav>
+                  </div>
+                  
+                  
+                  <div className="scroll-content">
+                  
+                    <div className="contenet-area">
+                      
+                      <div className="row">
+                        <div className="col-xl-12 col-lg-12 col-12 pr-2 pl-2 mb-3">
+                          {/* Inner Content Start */}
+                          <Card className="card-block">
+                            <ErrorBoundary>
+                              <AppRoutes />
+                            </ErrorBoundary>
+                          </Card>
+                          <Footer />
+                          {/* Inner Content End */}
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div>
+        </div >
+
+      </div >
+    </Router >
   );
 };
 

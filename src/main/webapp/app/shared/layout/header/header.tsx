@@ -49,7 +49,51 @@ const Header = (props: IHeaderProps) => {
   return (
     <div id="app-header">
       {renderDevRibbon()}
-      <LoadingBar className="loading-bar" />
+      <header className="header-menu">
+        <LoadingBar className="loading-bar" />
+        <div className="header-menu-container">
+          <div className="row">
+            <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <Brand />
+            </div>
+            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex">
+              
+                <Nav id="header-tabs" className="header-navbar">
+                  <Home />
+                  {props.isAuthenticated && <EntitiesMenu />}
+                  {props.isAuthenticated && props.isAdmin && (
+                    <AdminMenu showOpenAPI={props.isOpenAPIEnabled} showDatabase={!props.isInProduction} />
+                  )}
+                  <LocaleMenu currentLocale={props.currentLocale} onClick={handleLocaleChange} />
+                  <AccountMenu isAuthenticated={props.isAuthenticated} />
+                </Nav>
+              
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div className="float-right w-100 mt-n2">
+                <div className="fullscreen-switch float-right pt-3 pr-3">
+                  <a id="fs-doc-button">
+                    <i className="material-icons animated zoomIn">crop_free</i>
+                  </a>
+                  {/* <a id="fs-exit-doc-button">
+                    <i className="material-icons animated zoomIn">fullscreen_exit</i>
+                  </a> */}
+                </div>
+                <div className="user-profile float-right">
+                  <div className="profile-image">
+                    <span><small>ﺻﺒﺎﺡ اﻟﺨﻴﺮ </small><br />ﺳﺎﻣﻲ</span>
+                    <div className="emp-image">
+                      <img src="content/images/profile.png" className="profile-image-img" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      {/* <LoadingBar className="loading-bar" />
       <Navbar data-cy="navbar" dark expand="md" fixed="top" className="jh-navbar">
         <NavbarToggler aria-label="Menu" onClick={toggleMenu} />
         <Brand />
@@ -64,7 +108,7 @@ const Header = (props: IHeaderProps) => {
             <AccountMenu isAuthenticated={props.isAuthenticated} />
           </Nav>
         </Collapse>
-      </Navbar>
+      </Navbar> */}
     </div>
   );
 };
